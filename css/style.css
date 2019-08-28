@@ -671,8 +671,7 @@ h1, h2, h3, h4, h5,
   font-size: 3rem;
   color: #000;
   margin-bottom: 1.8rem;
-  font-weight: 900;
-  max-width: 450px; }
+  font-weight: 900; }
   @media (max-width: 991.98px) {
     .section-title {
       font-size: 1.5rem; } }
