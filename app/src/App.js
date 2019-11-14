@@ -62,7 +62,7 @@ class App extends React.Component {
           <Content style={{ margin: '24px 16px 0' }}>
             <HandleMenuItemStatus menuItemKey={this.state.menuItemKey} />
           </Content>
-          <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+          {/* <Footer style={{ textAlign: 'right' }}>True mastery of any skill takes a lifetime.</Footer> */}
         </Layout>
       </Layout>
     )

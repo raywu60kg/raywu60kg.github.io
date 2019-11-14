@@ -32,7 +32,7 @@ class HandleMenuItemStatus extends React.Component {
     render() {
         return (
             <Layout>
-                <Header style={{ background: '#fff', padding: '24px 16px 64px' }}>
+                <Header style={{ background: '#fff', padding: '24px 16px 64px',textAlign:'center' }}>
                     <Title level={4}>{this.MenuItemMappingObject[this.props.menuItemKey]["displayName"]}</Title>
                 </Header>
                 <Content>
