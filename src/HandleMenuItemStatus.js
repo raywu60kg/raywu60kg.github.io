@@ -4,6 +4,7 @@ import ContentAboutMe from './contents/ContentAboutMe'
 import ContentExperience from './contents/ContentExperience'
 import ContentEducation from './contents/ContentEducation'
 import ContentSkills from './contents/ContentSkills'
+import ContentProjects from './contents/ContentProjects'
 const { Title } = Typography;
 
 const { Header, Content} = Layout;
@@ -13,7 +14,7 @@ class HandleMenuItemStatus extends React.Component {
         super(props);
         this.MenuItemMappingObject = {
             'aboutMe': {
-                'displayName': 'About me',
+                'displayName': 'About Wu Hao Hsiang',
                 'return': <ContentAboutMe/>},
             'experience': {
                 'displayName': 'Experience',
@@ -25,6 +26,10 @@ class HandleMenuItemStatus extends React.Component {
             'skills': {
                 'displayName': 'Skills',
                 'return': <ContentSkills/>    
+            },
+            'projects': {
+                'displayName': 'Projects',
+                'return': <ContentProjects/>
             }
         }
     }
@@ -33,7 +38,7 @@ class HandleMenuItemStatus extends React.Component {
         return (
             <Layout>
                 <Header style={{ background: '#fff', padding: '24px 16px 64px',textAlign:'center' }}>
-                    <Title level={4}>{this.MenuItemMappingObject[this.props.menuItemKey]["displayName"]}</Title>
+                    <Title level={3}>{this.MenuItemMappingObject[this.props.menuItemKey]["displayName"]}</Title>
                 </Header>
                 <Content>
                     {this.MenuItemMappingObject[this.props.menuItemKey]["return"]}

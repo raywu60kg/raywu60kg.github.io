@@ -1,9 +1,10 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import { Result, Layout,Icon,Spin } from 'antd';
-const {  Content } = Layout;
+import { Result, Layout, Icon, Spin, Row, Col, Button, Typography, Divider } from 'antd';
+const { Content } = Layout;
+const { Title, Paragraph, Text } = Typography;
 
-class Experience extends React.Component {
+class ContentExperience extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -11,12 +12,20 @@ class Experience extends React.Component {
     render() {
         return (
             <Layout>
-                <Result icon={<Icon type="smile" theme="twoTone"/>} title="Work in progress"/>
-                <Content style={{ textAlign: 'center', padding:'24px' }}>
-                    <Spin size='large'/>
+                <Content style={{ textAlign: 'left', padding: '24px' }}>
+                    <Row>
+                        <Col span={18}>
+                            <Typography>
+                                <Paragraph>
+                                    <Title level={4}>Groundhog Technologies</Title>
+                                    Data Scientist 
+                                </Paragraph>
+                            </Typography>
+                        </Col>
+                    </Row>
                 </Content>
             </Layout>
         )
     }
 }
-export default Experience;
+export default ContentExperience;

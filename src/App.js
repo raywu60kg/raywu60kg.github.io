@@ -32,7 +32,7 @@ class App extends React.Component {
           }}
         >
           <Content style={{padding:'24px 16px'}}>
-            <Title level={4}>Hao Hsiang, Wu</Title>
+            <Title level={4}>Wu Hao Hsiang</Title>
           </Content>
           <Menu 
             theme="light" 
@@ -54,6 +54,10 @@ class App extends React.Component {
             <Menu.Item key="skills">
               <Icon type="tool" />
               <span className="skills">Skills</span>
+            </Menu.Item>
+            <Menu.Item key="projects">
+              <Icon type="project" />
+              <span className="projects">Projects</span>
             </Menu.Item>
           </Menu>
         </Sider>
