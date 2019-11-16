@@ -12,7 +12,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,7 +31,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://raywu60kg.github.io/",
+  "homepage": "https://raywu60kg.github.io",
   "devDependencies": {
     "gh-pages": "^2.1.1"
   }
