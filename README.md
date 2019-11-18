@@ -1,10 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# raywu60kg.github.io
+The page is on 
+https://raywu60kg.github.io
 
 ### Put on github page
 
 ```
 yarn build
-yarn deploy
 ```
-
+and put all the stuff in build on root level
 
