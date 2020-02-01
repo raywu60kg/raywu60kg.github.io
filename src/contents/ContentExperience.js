@@ -1,14 +1,10 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import { Result, Layout, Icon, Spin, Row, Col, Button, Typography, Divider } from 'antd';
+import { Layout, Row, Col, Typography } from 'antd';
 const { Content } = Layout;
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 class ContentExperience extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Layout>

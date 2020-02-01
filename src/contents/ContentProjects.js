@@ -1,13 +1,10 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import { Result, Layout, Icon, Spin, Row, Col, Button, Typography, Divider } from 'antd';
+import { Layout, Row, Col, Typography } from 'antd';
 const { Content } = Layout;
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 class ContentProjects extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
@@ -17,30 +14,30 @@ class ContentProjects extends React.Component {
                         <Col span={18}>
                             <Typography>
                                 <Paragraph>
-                                    <Title level={4}>Python</Title>
-                                    <ul>
-                                        <li>
-                                            <a href="https://github.com/raywu60kg/print-function">print-function</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/raywu60kg/pytest-demo">pytest-demo</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/raywu60kg/ray-tune-demo">ray-tune-demo</a>
-                                        </li>
-                                    </ul>
-                                    <Title level={4}>R Shiny</Title>
-                                    <ul>
-                                        <li>
-                                            <a href="https://raywu60kg.shinyapps.io/Tower-of-Hanoi">Tower-of-Hanoi</a>
-                                        </li>
-                                    </ul>
-                                    <Title level={4}>React.js</Title>
-                                    <ul>
-                                        <li>
-                                            <a href="https://raywu60kg.github.io/machine-learning-dashboard">Machine Learning Dashboard</a>
-                                        </li>
-                                    </ul>                                   
+                                    <Title level={4}><a href="https://github.com/raywu60kg/data-scientists">Data scientists working environment</a></Title>
+                                    <Content>
+                                        A docker image that data scientists can use to start their working environment easily.
+                                    </Content>
+                                    <Title level={4}><a href="https://github.com/raywu60kg/kaggles">kaggles</a></Title>
+                                    <Content>
+                                        Using colab to create some jupyter notebooks to do basic predictions in kaggle.
+                                    </Content>
+                                    <Title level={4}><a href="https://github.com/raywu60kg/random-lunch">Lunch random selector</a></Title>
+                                    <Content>
+                                        A python flask server to select the lunch.
+                                    </Content>
+                                    <Title level={4}><a href="https://github.com/raywu60kg/print-function">Print function</a></Title>
+                                    <Content>
+                                        A python package overwrite our print function.
+                                    </Content>
+                                    <Title level={4}><a href="https://github.com/raywu60kg/Tower-of-Hanoi">Tower of Hanoi</a></Title>
+                                    <Content>
+                                        A simple tower of hanoi game build by R shiny.
+                                    </Content> 
+                                    <Title level={4}><a href="https://github.com/raywu60kg/machine-learning-dashboard">Machine learning dashboard</a></Title>
+                                    <Content>
+                                        A react.js dashboard for machine learning-related purposes.
+                                    </Content>                    
                                 </Paragraph>
                             </Typography>
                         </Col>

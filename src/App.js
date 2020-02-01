@@ -3,19 +3,29 @@ import React from 'react';
 import HandleMenuItemStatus from './HandleMenuItemStatus'
 import 'antd/dist/antd.css';
 import { Layout, Menu, Icon, Typography } from 'antd';
-const { Header, Content, Footer, Sider } = Layout;
+const { Content, Sider } = Layout;
 const { Title } = Typography;
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { menuItemKey: "aboutMe"};
+    this.state = { menuItemKey: "aboutMe",collapsed: false};
+
   }
 
   handleMenuItemOnClick = (menuObj) => {
     console.log(`menuObj.key`, menuObj.key, this.state.menuItemKey)
-    this.setState({ menuItemKey: menuObj.key })
+    this.setState({ 
+      menuItemKey: menuObj.key
+    })
+    this.handleSiderCollapsed()
   };
+  handleSiderCollapsed = () => {
+    // console.log(collapsed, type);
+    this.setState({
+      collapsed: !this.state.collapsed
+    })
+  }
 
   render() {
     return (
@@ -27,9 +37,10 @@ class App extends React.Component {
           onBreakpoint={broken => {
             console.log(broken);
           }}
-          onCollapse={(collapsed, type) => {
-            console.log(collapsed, type);
-          }}
+          // onCollapse={(collapsed, type) => {
+          //   console.log(collapsed, type);
+          // }}
+          onCollapse={this.handleSiderCollapsed}
         >
           <Content style={{padding:'24px 16px'}}>
             <Title level={4}>Wu Hao Hsiang</Title>
@@ -62,11 +73,9 @@ class App extends React.Component {
           </Menu>
         </Sider>
         <Layout>
-          {/* <Header style={{ background: '#fff', padding: 0 }} /> */}
           <Content style={{ margin: '24px 16px 0' }}>
             <HandleMenuItemStatus menuItemKey={this.state.menuItemKey} />
           </Content>
-          {/* <Footer style={{ textAlign: 'right' }}>True mastery of any skill takes a lifetime.</Footer> */}
         </Layout>
       </Layout>
     )

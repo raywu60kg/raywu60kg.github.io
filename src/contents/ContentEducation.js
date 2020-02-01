@@ -1,13 +1,10 @@
 import React from 'react';
 import 'antd/dist/antd.css';
-import { Result, Layout, Icon, Spin, Row, Col, Button, Typography, Divider, Carousel, Card } from 'antd';
+import { Layout, Icon, Row, Col, Typography, Card } from 'antd';
 const { Content } = Layout;
-const { Title, Paragraph, Text } = Typography;
+const { Title } = Typography;
 const { Meta } = Card;
 class ContentEducation extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
@@ -22,43 +19,23 @@ class ContentEducation extends React.Component {
                     </Row>
 
                     <Row gutter={[16,250]}>
-                        <Col span={8}>
-                            {/* <Carousel autoplay style={{textAlign:'center'}}>
-                                    <div>
-
-                                        <h5>Chung Hsing University</h5>
-                                        <img src="ch.jpg"></img>
-                                    </div>
-                                    <div>
-                                        <h5>National University of Kaohsiung</h5>
-                                        <img src="nuk.jpg" alt="Image" ></img>
-                                    </div>
-                                    <div>
-                                        <h5>Zhong-Zheng Senior High School</h5>
-                                        <img src="zz.jpg" alt="Image" ></img>
-                                    </div>
-                                </Carousel> */}
+                        <Col xs={24} sm={24} md={8} lg={8} xl={8}>
+            
                             <Card
-                                hoverable
-                                // style={{ width: 240 }}
                                 cover={<img alt="ch" src="ch.jpg" />}
                             >
                                 <Meta description="Chung Hsing University" />
                             </Card>
                         </Col>
-                        <Col span={8}>
+                        <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                             <Card
-                                hoverable
-                                // style={{ width: 240 }}
                                 cover={<img alt="nuk" src="nuk.jpg" />}
                             >
                                 <Meta description="National University of Kaohsiung" />
                             </Card>
                         </Col>
-                        <Col span={8}>
+                        <Col xs={24} sm={24} md={8} lg={8} xl={8}>
                             <Card
-                                hoverable
-                                // style={{ width: 240 }}
                                 cover={<img alt="zz" src="zz.jpg" />}
                             >
                                 <Meta description="Zhong-Zheng Senior High School"/>
