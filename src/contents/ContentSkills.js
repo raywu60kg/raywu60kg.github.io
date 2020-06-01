@@ -25,7 +25,8 @@ class ContentSkills extends React.Component {
                                 <Paragraph>
                                     Machine Learning, Deep Learning, Data Virtualization
                                 </Paragraph>
-
+                            </Typography>
+                            <Typography>
                                 <Title level={4}>R</Title>
                             </Typography>
                             <Rate
@@ -38,37 +39,53 @@ class ContentSkills extends React.Component {
                                 <Paragraph>
                                     Statistical Analysis, Data Virtualization, Exploratory Data Analysis.
                                 </Paragraph>
-                                <Title level={4}>JavaScript</Title>
-                            </Typography>
-                            <Rate
-                                disabled defaultValue={2}
-                                allowHalf={true}
-                                character={<Icon type="smile" />}
-                                style={{ fontSize: '12px', color: '#08c' }}
-                            />
-                            <Typography>
-                                <Paragraph>
-                                    React.js, Node.js
+                                </Typography>
+                                <Typography>
+                                    <Title level={4}>Scala</Title>
+                                </Typography>
+                                <Rate
+                                    disabled defaultValue={2}
+                                    allowHalf={true}
+                                    character={<Icon type="smile" />}
+                                    style={{ fontSize: '12px', color: '#08c' }}
+                                />
+                                <Typography>
+                                    <Paragraph>
+                                        Scala Spark
                                 </Paragraph>
-                                <Title level={4}>Docker</Title>
-                            </Typography>
-                            <Rate
-                                disabled defaultValue={3.5}
-                                allowHalf={true}
-                                character={<Icon type="smile" />}
-                                style={{ fontSize: '12px', color: '#08c' }}
-                            />
-                            <Typography>
-                                <Paragraph>
-                                    Docker Container, Docker Image
+                                </Typography>
+                                <Typography>
+                                    <Title level={4}>JavaScript</Title>
+                                </Typography>
+                                <Rate
+                                    disabled defaultValue={2}
+                                    allowHalf={true}
+                                    character={<Icon type="smile" />}
+                                    style={{ fontSize: '12px', color: '#08c' }}
+                                />
+                                <Typography>
+                                    <Paragraph>
+                                        React.js, Node.js
+                                </Paragraph>
+                                    <Title level={4}>Docker</Title>
+                                </Typography>
+                                <Rate
+                                    disabled defaultValue={3.5}
+                                    allowHalf={true}
+                                    character={<Icon type="smile" />}
+                                    style={{ fontSize: '12px', color: '#08c' }}
+                                />
+                                <Typography>
+                                    <Paragraph>
+                                        Docker Container, Docker Image
                                 </Paragraph>
 
-                            </Typography>
+                                </Typography>
                         </Col>
                     </Row>
                 </Content>
             </Layout>
-        )
-    }
-}
+                )
+            }
+        }
 export default ContentSkills;

@@ -22,6 +22,10 @@ class ContentProjects extends React.Component {
                                     <Content>
                                         Using colab to create some jupyter notebooks to do basic predictions in kaggle.
                                     </Content>
+                                    <Title level={4}><a href="https://github.com/raywu60kg/spark-scala-kaggles">Spark Scala Kaggles</a></Title>
+                                    <Content>
+                                        Using scala spark to train models for kaggle competition
+                                    </Content>
                                     <Title level={4}><a href="https://github.com/raywu60kg/random-lunch">Lunch random selector</a></Title>
                                     <Content>
                                         A python flask server to select the lunch.
@@ -33,11 +37,11 @@ class ContentProjects extends React.Component {
                                     <Title level={4}><a href="https://github.com/raywu60kg/Tower-of-Hanoi">Tower of Hanoi</a></Title>
                                     <Content>
                                         A simple tower of hanoi game build by R shiny.
-                                    </Content> 
+                                    </Content>
                                     <Title level={4}><a href="https://github.com/raywu60kg/machine-learning-dashboard">Machine learning dashboard</a></Title>
                                     <Content>
                                         A react.js dashboard for machine learning-related purposes.
-                                    </Content>                    
+                                    </Content>
                                 </Paragraph>
                             </Typography>
                         </Col>
