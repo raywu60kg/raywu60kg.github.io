@@ -13,7 +13,7 @@ class ContentExperience extends React.Component {
                         <Col span={18}>
                             <Typography>
                                 <Paragraph>
-                                    <Title level={4}>Groundhog Technologies</Title>
+                                    <Title level={4}>Groundhog Technologies 2018/09-</Title>
                                     Data Scientist 
                                 </Paragraph>
                             </Typography>

@@ -14,6 +14,15 @@ class ContentProjects extends React.Component {
                         <Col span={18}>
                             <Typography>
                                 <Paragraph>
+                                    <Title level={4}><a href="https://github.com/raywu60kg/tensorlfow-project-demo">Tensorflow project demo</a></Title>
+                                    <Content>
+                                        Demo project for solving real world machine learning problems using tensorflow.
+                                    </Content>
+                                    <Title level={4}><a href="https://github.com/raywu60kg/lightgbm-project-demo">Ligthgbm projec demo</a></Title>
+                                    <Content>
+                                        Demo project for solving real world machine learning problems using ligthgbm.
+    
+                                    </Content>
                                     <Title level={4}><a href="https://github.com/raywu60kg/data-scientists">Data scientists working environment</a></Title>
                                     <Content>
                                         A docker image that data scientists can use to start their working environment easily.
