@@ -1,6 +1,4 @@
 import React from 'react';
-// import './App.css';
-import HandleMenuItemStatus from './HandleMenuItemStatus'
 import 'antd/dist/antd.css';
 import { Layout, Menu, Icon, Typography } from 'antd';
 import {
@@ -20,17 +18,9 @@ const { Title } = Typography;
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { menuItemKey: "aboutMe", collapsed: false };
-
+    this.state = { collapsed: false };
   }
 
-  handleMenuItemOnClick = (menuObj) => {
-    console.log(`menuObj.key`, menuObj.key, this.state.menuItemKey)
-    this.setState({
-      menuItemKey: menuObj.key
-    })
-    this.handleSiderCollapsed()
-  };
   handleSiderCollapsed = () => {
     this.setState({
       collapsed: !this.state.collapsed
@@ -58,24 +48,38 @@ class App extends React.Component {
               mode="vertical"
               defaultSelectedKeys={['aboutMe']}>
               <Menu.Item key="aboutMe">
+                <Link to="/about">
                 <Icon type="user" />
-                <span className="aboutMe"><Link to="/about">About Me</Link></span>
+                <span className="aboutMe">About Me</span>
+                </Link>
               </Menu.Item>
+
               <Menu.Item key="experience">
+                <Link to="/experience">
                 <Icon type="rise" />
-                <span className="experience"><Link to="/experience">Experience</Link></span>
+                <span className="experience">Experience</span>
+                </Link>
               </Menu.Item>
+
               <Menu.Item key="education">
+                <Link to="/education">
                 <Icon type="read" />
-                <span className="education"><Link to="/education">Education</Link></span>
+                <span className="education">Education</span>
+                </Link>
               </Menu.Item>
+
               <Menu.Item key="skills">
+                <Link to="/skills">
                 <Icon type="tool" />
-                <span className="skills"><Link to="/skills">Skills</Link></span>
+                <span className="skills">Skills</span>
+                </Link>
               </Menu.Item>
+
               <Menu.Item key="projects">
+                <Link to="/projects">
                 <Icon type="project" />
-                <span className="projects"><Link to="/projects">Projects</Link></span>
+                <span className="projects">Projects</span>
+                </Link>
               </Menu.Item>
             </Menu>
           </Sider>
@@ -101,7 +105,6 @@ class App extends React.Component {
                   <ContentSkills />
                 </Route>
               </Switch>
-              {/* <HandleMenuItemStatus menuItemKey={this.state.menuItemKey} /> */}
             </Content>
           </Layout>
         </Layout>
