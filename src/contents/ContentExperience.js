@@ -20,6 +20,22 @@ class ContentExperience extends React.Component {
                                     Data Scientist
                                 </Paragraph>
                             </Typography>
+                            <Paragraph>
+                                <ul>
+                                    <li>
+                                        Build a deep learning prediction API for click-through rate prediction on the real-time bidding system,
+                                        which contains a data pipeline for training models and a prediction server when used for production
+                                        level.
+                                 </li>
+
+                                    <li>
+                                        Decide the real-time bidding strategies for commercial usage.
+                                </li>
+                                    <li>
+                                        Work closely with product and project managers, back-end engineers, devops, and data engineers.
+                                </li>
+                                </ul>
+                            </Paragraph>
                         </Col>
                     </Row>
                 </Content>
