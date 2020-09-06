@@ -1,7 +1,7 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import { Layout, Row, Col, Typography } from 'antd';
-const { Content } = Layout;
+const { Header, Content } = Layout;
 const { Title, Paragraph } = Typography;
 
 class ContentProjects extends React.Component {
@@ -9,6 +9,9 @@ class ContentProjects extends React.Component {
     render() {
         return (
             <Layout>
+                <Header style={{ background: '#fff', padding: '24px 16px 64px', textAlign: 'center' }}>
+                    <Title level={3}>projects</Title>
+                </Header>
                 <Content style={{ textAlign: 'left', padding: '24px' }}>
                     <Row>
                         <Col span={18}>
@@ -21,7 +24,7 @@ class ContentProjects extends React.Component {
                                     <Title level={4}><a href="https://github.com/raywu60kg/lightgbm-project-demo">Ligthgbm projec demo</a></Title>
                                     <Content>
                                         Demo project for solving real world machine learning problems using ligthgbm.
-    
+
                                     </Content>
                                     <Title level={4}><a href="https://github.com/raywu60kg/data-scientists">Data scientists working environment</a></Title>
                                     <Content>

@@ -1,7 +1,7 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import { Layout, Icon, Row, Col, Typography, Card } from 'antd';
-const { Content } = Layout;
+const { Header, Content } = Layout;
 const { Title } = Typography;
 const { Meta } = Card;
 class ContentEducation extends React.Component {
@@ -9,6 +9,9 @@ class ContentEducation extends React.Component {
     render() {
         return (
             <Layout>
+                <Header style={{ background: '#fff', padding: '24px 16px 64px', textAlign: 'center' }}>
+                    <Title level={3}>Education</Title>
+                </Header>
                 <Content style={{ textAlign: 'left', padding: '24px' }}>
                     <Row>
                         <Col span={20}>
@@ -18,9 +21,9 @@ class ContentEducation extends React.Component {
                         </Col>
                     </Row>
 
-                    <Row gutter={[16,250]}>
+                    <Row gutter={[16, 250]}>
                         <Col xs={24} sm={24} md={8} lg={8} xl={8}>
-            
+
                             <Card
                                 cover={<img alt="ch" src="ch.jpg" />}
                             >
@@ -38,7 +41,7 @@ class ContentEducation extends React.Component {
                             <Card
                                 cover={<img alt="zz" src="zz.jpg" />}
                             >
-                                <Meta description="Zhong-Zheng Senior High School"/>
+                                <Meta description="Zhong-Zheng Senior High School" />
                             </Card>
                         </Col>
                     </Row>
